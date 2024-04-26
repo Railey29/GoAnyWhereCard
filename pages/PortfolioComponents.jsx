@@ -239,7 +239,7 @@ export default function PortfolioComponents() {
           ref={refLandingPage}
           id="landingPage1"
         >
-          <h1 style={headerLandingStyle}>Hi, I'm Railey Pacheco!</h1>
+          <h1 style={headerLandingStyle}>Hi, Im Railey Pacheco!</h1>
           <div style={locationIcon}>
             <IoLocation style={{ fontSize: "50px", color: "#6ca3d9" }} />
           </div>
@@ -258,27 +258,29 @@ export default function PortfolioComponents() {
         >
           <h1 style={AboutHeader}>ABOUT PAGE</h1>
           <h4 style={myInfo}>
-            During my year, as a Computer Engineering student at STI College I'm
-            diving into the realm of web development with enthusiasm. I'm
-            focusing on learning the essentials of both frontend and backend
-            aspects. While my educational journey is still ongoing I'm actively
-            immersing myself in mastering the tools and technologies that drive
-            todays web applications. In my studies I've acquired a grasp of
-            frontend languages such as HTML, CSS and JavaScript allowing me to
-            create user visually appealing interfaces. By working on projects
-            I've refined my skills in design to ensure a seamless user
-            experience across various devices and screen sizes. On the side of
-            things I'm eager to explore server side programming using Python and
-            frameworks like Flask. The flexibility and scalability that Flask
-            offers have captured my interest. I'm keen to discover how it can be
-            utilized to develop web applications. Furthermore I am familiarizing
-            myself with PostgreSQL as a database management system to understand
-            its importance in storing and managing data. Outside of coursework I
-            am actively seeking resources to enhance my understanding and skills
-            in web development. By completing tutorials and engaging with coding
+            During my year, as a Computer Engineering student at STI College
+            I&apos;m diving into the realm of web development with enthusiasm.
+            I&apos;m focusing on learning the essentials of both frontend and
+            backendgit aspects. While my educational journey is still ongoing
+            I&apos;m actively immersing myself in mastering the tools and
+            technologies that drive today&apos;s web applications. In my studies
+            I&apos;ve acquired a grasp of frontend languages such as HTML, CSS
+            and JavaScript allowing me to create visually appealing interfaces.
+            By working on projects I&apos;ve refined my skills in design to
+            ensure a seamless user experience across various devices and screen
+            sizes. On the side of things I&apos;m eager to explore server side
+            programming using Python and frameworks like Flask. The flexibility
+            and scalability that Flask offers have captured my interest.
+            I&apos;m keen to discover how it can be utilized to develop web
+            applications. Furthermore I am familiarizing myself with PostgreSQL
+            as a database management system to understand its importance in
+            storing and managing data. Outside of coursework I am actively
+            seeking resources to enhance my understanding and skills in web
+            development. By completing tutorials and engaging with coding
             communities I aim to broaden my knowledge of practices, in web
             development and stay updated on emerging trends.
           </h4>
+
           <img src="/MyPhoto.jpg" alt="RaiPhotoAbout" style={myPhotoStyle} />
         </div>
         {/**Projects */}
@@ -332,7 +334,7 @@ export default function PortfolioComponents() {
           </div>
           <div className="project2" style={project3}>
             <h6 style={projectHeader}>
-              basically it's just clickable in dark and light mode
+              basically its just clickable in dark and light mode
             </h6>
             <a href="https://toggle-light-3jdm.vercel.app/" target="blank_">
               <button className={styles.buttons} style={projects}>
@@ -364,8 +366,8 @@ export default function PortfolioComponents() {
             <h1 style={ContactSay}>GET IN TOUCH</h1>
             <p style={ContactSay}>
               Welcome to my website! if you have question or want to say hi!,
-              feel free to contact me. I'm student who enjoy learning and making
-              new friends I'll respond as quick as possible
+              feel free to contact me. Im student who enjoy learning and making
+              new friends I ll respond as quick as possible
             </p>
             <div style={styleDivLogo}>
               <a
