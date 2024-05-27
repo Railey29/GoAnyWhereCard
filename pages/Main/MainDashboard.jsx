@@ -464,9 +464,17 @@ function MainDashboard() {
           </div>
         ))}
       </div>
-      <a href="/SoftdeskProject/FrontEnd/LandingPageComponents">
-        <button style={handleSignOut}>SIGN OUT</button>
-      </a>
+      <button
+        style={handleSignOut}
+        onClick={() =>
+          window.open(
+            "/SoftdeskProject/FrontEnd/LandingPageComponents",
+            "_self"
+          )
+        }
+      >
+        SIGN OUT
+      </button>
     </div>
   );
 }
