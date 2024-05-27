@@ -5,10 +5,6 @@ import axios from "axios";
 function SignUpComponents() {
   const [userName, setUserName] = useState("");
   const [UserPassword, setPassword] = useState("");
-  const [pin1, setPin1] = useState("");
-  const [pin2, setPin2] = useState("");
-  const [pin3, setPin3] = useState("");
-  const [pin4, setPin4] = useState("");
   const [data, setData] = useState("");
 
   const handleFetchData = async () => {
@@ -17,10 +13,6 @@ function SignUpComponents() {
       const response = await axios.post("http://127.0.0.1:5000/SignUp", {
         username: userName,
         password: UserPassword,
-        pins1: pin1,
-        pins2: pin2,
-        pins3: pin3,
-        pins4: pin4,
       });
       setData(response.data);
       if (response.data.success) {
@@ -38,10 +30,6 @@ function SignUpComponents() {
     e.preventDefault();
     setUserName("");
     setPassword("");
-    setPin1("");
-    setPin2("");
-    setPin3("");
-    setPin4("");
     console.log(userName, UserPassword, pin1, pin2, pin3, pin4);
     handleFetchData();
   };
