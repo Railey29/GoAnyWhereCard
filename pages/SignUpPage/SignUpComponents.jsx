@@ -71,13 +71,13 @@ function SignUpComponents() {
           style={{
             color: "white",
             position: "absolute",
-            left: "17%",
+            left: "20%",
             fontSize: "8vh",
             fontFamily: "Verdana,Sans-serif",
           }}
           className={`animate__animated animate__bounceInLeft`}
         >
-          GoAnywehre Card
+          Go AnyWhere
         </h1>
       </div>
       <div>
