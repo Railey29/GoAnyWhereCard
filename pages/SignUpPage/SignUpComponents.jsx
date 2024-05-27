@@ -25,10 +25,7 @@ function SignUpComponents() {
       setData(response.data);
       if (response.data.success) {
         alert("You have successfully signed up!");
-        window.open(
-          "/SoftdeskProject/FrontEnd/LandingPageComponents",
-          "_blank"
-        );
+        window.open("/SoftdeskProject/FrontEnd/LandingPageComponents", "_self");
       } else {
         alert(response.data.message);
       }
@@ -71,7 +68,7 @@ function SignUpComponents() {
     >
       <div>
         <img
-          src="/Logo3.png"
+          src="/logoFinal.png"
           alt="Logo2"
           style={{
             height: "40vh",
@@ -86,13 +83,13 @@ function SignUpComponents() {
           style={{
             color: "white",
             position: "absolute",
-            left: "25%",
-            fontSize: "13vh",
+            left: "17%",
+            fontSize: "8vh",
             fontFamily: "Verdana,Sans-serif",
           }}
           className={`animate__animated animate__bounceInLeft`}
         >
-          PayGO
+          GoAnywehre Card
         </h1>
       </div>
       <div>
@@ -138,99 +135,8 @@ function SignUpComponents() {
             value={UserPassword}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <h1
-            style={{
-              position: "absolute",
-              color: "white",
-              top: "48%",
-              left: "60%",
-              fontFamily: "Verdana,Sans-serif",
-            }}
-            className={`animate__animated animate__backInRight`}
-          >
-            Set 4 pin code
-          </h1>
           {/**For div in Pin num */}
-          <div style={{ position: "absolute", top: "58%", left: "60%" }}>
-            <input
-              className={`animate__animated animate__backInRight`}
-              type="number"
-              min="1"
-              max="9"
-              maxLength="1"
-              style={{
-                width: "3vw",
-                height: "5vh",
-                marginRight: "5px",
-                backgroundColor: "white",
-                color: "black",
-                borderRadius: "15px",
-                paddingLeft: "10px",
-                paddingRight: "10px",
-              }}
-              required
-              value={pin1}
-              onChange={(e) => setPin1(e.target.value)}
-            />
-            <input
-              className={`animate__animated animate__backInRight`}
-              type="number"
-              min="1"
-              max="9"
-              maxLength="1"
-              style={{
-                width: "3vw",
-                height: "5vh",
-                marginRight: "5px",
-                backgroundColor: "white",
-                color: "black",
-                borderRadius: "15px",
-                paddingLeft: "10px",
-                paddingRight: "10px",
-              }}
-              required
-              value={pin2}
-              onChange={(e) => setPin2(e.target.value)}
-            />
-            <input
-              className={`animate__animated animate__backInRight`}
-              type="number"
-              min="1"
-              max="9"
-              maxLength="1"
-              style={{
-                width: "3vw",
-                height: "5vh",
-                marginRight: "5px",
-                backgroundColor: "white",
-                color: "black",
-                borderRadius: "15px",
-                paddingLeft: "10px",
-                paddingRight: "10px",
-              }}
-              required
-              value={pin3}
-              onChange={(e) => setPin3(e.target.value)}
-            />
-            <input
-              className={`animate__animated animate__backInRight`}
-              type="number"
-              min="1"
-              max="9"
-              maxLength="1"
-              style={{
-                width: "3vw",
-                height: "5vh",
-                backgroundColor: "white",
-                color: "black",
-                borderRadius: "15px",
-                paddingLeft: "10px",
-                paddingRight: "10px",
-              }}
-              required
-              value={pin4}
-              onChange={(e) => setPin4(e.target.value)}
-            />
+          <div style={{ position: "absolute", top: "58%", left: "62%" }}>
             <button
               className={`animate__animated animate__backInRight`}
               style={{

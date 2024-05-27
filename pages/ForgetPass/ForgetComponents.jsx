@@ -6,9 +6,12 @@ function FortgetComponents() {
   const [email, setEmail] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [data, setData] = useState("");
-  const handleFetchData = async () => {
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setEmail("");
+    setConfirmPassword("");
     try {
-      console.log("Fetching data....");
       const response = await axios.post(
         "http://127.0.0.1:5000/ForgotPassword",
         {
@@ -16,18 +19,17 @@ function FortgetComponents() {
           ConformPassword: confirmPassword,
         }
       );
-      setData(response.data);
-      {
-        /**Gagawin mo nalang yung if else nalang ng return ng server pero ang logic dito dapat ichcheck if yung password is exisiting or not dapat existing para makapag change sya */
+      const responseData = response.data;
+      if (response.data.success) {
+        alert("You have successfully changed your password");
+        window.open("/SoftdeskProject/FrontEnd/LandingPageComponents", "_self");
+      } else {
+        alert(responseData.message || "An error occurred. Please try again.");
       }
-    } catch (error) {}
-  };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setEmail("");
-    setConfirmPassword("");
-    handleFetchData();
-    console.log(email, confirmPassword);
+    } catch (error) {
+      console.error("Error:", error);
+      alert("An error occurred. Please try again.");
+    }
   };
   return (
     <div

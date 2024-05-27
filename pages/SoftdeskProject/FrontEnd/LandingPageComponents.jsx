@@ -16,6 +16,7 @@ function LandingPageComponents() {
   const [data, setData] = useState("");
   const [message, setMessage] = useState("");
 
+  /*
   useEffect(() => {
     const askRole = prompt(
       "Type Admin Or Client for Verification: "
@@ -26,6 +27,7 @@ function LandingPageComponents() {
       alert("Direct to the admin page(As of know wala pa");
     }
   }, []);
+  */
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -39,7 +41,9 @@ function LandingPageComponents() {
       setData(response.data);
       if (response.data.success) {
         setMessage(`Logged in as ${response.data.data.username}`);
-        window.open(`/Main/MainDashboard?name=${isUserName}`, "_blank");
+        window.open(`/Main/MainDashboard?name=${isUserName}`, "_self");
+      } else if (isUserName === "admin" && isUserPassword === "admin") {
+        window.open(`/Admin/AdminComponents`, "_self");
       } else {
         alert("Please Try Again, Possibly Incorrect Username or Password");
       }
@@ -172,7 +176,7 @@ function LandingPageComponents() {
           {" "}
           <div>
             {" "}
-            <img src="/PayGoPayment.jpg" alt="Image 1" style={photo} />{" "}
+            <img src="/slider1.2.png" alt="Image 1" style={photo} />{" "}
           </div>{" "}
           <div>
             {" "}
@@ -269,7 +273,7 @@ function LandingPageComponents() {
           </a>{" "}
         </form>{" "}
         <img
-          src="/Logo3.png"
+          src="/LogoFinal.png"
           alt="Logo"
           style={{
             height: "30vh",
