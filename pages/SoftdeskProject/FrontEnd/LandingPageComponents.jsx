@@ -273,7 +273,7 @@ function LandingPageComponents() {
           </a>{" "}
         </form>{" "}
         <img
-          src="/LogoFinal.png"
+          src="/logoFinal.png"
           alt="Logo"
           style={{
             height: "30vh",
